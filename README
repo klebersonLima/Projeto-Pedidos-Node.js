@@ -1,0 +1,25 @@
+Prazer, meu nome é Kleberson e estou muito contente em estar participando do processo seletivo.
+
+Segue abaixo as tabelas do PostgreSQL.
+
+CREATE TABLE "Order" (
+    orderId        VARCHAR(50) PRIMARY KEY,  
+    value          NUMERIC(10,2) NOT NULL,   
+    creationDate   TIMESTAMP 
+);
+
+CREATE TABLE Items (
+    orderId     VARCHAR(50) NOT NULL,      
+    productId   VARCHAR(50) NOT NULL,      
+    quantity    INTEGER NOT NULL,          
+    price       NUMERIC(10,2) NOT NULL,     
+    PRIMARY KEY (orderId, productId),
+    CONSTRAINT fk_order
+      FOREIGN KEY (orderId) REFERENCES "Order"(orderId)
+);
+
+
+Vou deixar abaixo também o link para acessar o Postman.
+https://klebersonluiz5-1278330.postman.co/workspace/Churrosyt's-Workspace~81442271-5afe-4008-8784-71bbb16354b0/collection/50495638-eeb9a589-803b-4a76-81f0-241cf8d9c746?action=share&creator=50495638
+
+Note que também tem a pasta 'postman', caso deseje importar através do arquivo.
