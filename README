@@ -18,8 +18,10 @@ CREATE TABLE Items (
       FOREIGN KEY (orderId) REFERENCES "Order"(orderId)
 );
 
+Note que também tem a pasta 'postman', caso deseje importar através do arquivo!
+
 
 Vou deixar abaixo também o link para acessar o Postman.
 https://klebersonluiz5-1278330.postman.co/workspace/Churrosyt's-Workspace~81442271-5afe-4008-8784-71bbb16354b0/collection/50495638-eeb9a589-803b-4a76-81f0-241cf8d9c746?action=share&creator=50495638
 
-Note que também tem a pasta 'postman', caso deseje importar através do arquivo.
+
